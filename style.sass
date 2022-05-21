@@ -1,0 +1,1075 @@
+*
+    box-sizing: content-box
+
+html
+    scroll-behavior: smooth
+
+body 
+    overflow-y: hidden
+
+body.loaded
+    overflow-y: auto
+
+
+.loadingbox
+    display: block
+    position: fixed
+    z-index: 10
+    height: 100vh
+    background-color: white
+    top: 0
+    left: 0
+
+#content 
+    opacity: 0
+    transition: .25s ease
+
+.loaded #content 
+    opacity: 1
+
+.loaded .loadingbox
+    animation: loaded .5s forwards
+
+
+@keyframes loaded
+    0% 
+        opacity: 1
+
+    100%
+        opacity: 0
+
+
+#loading
+    width: 100vw
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    & .loading-svg
+        width: 90%
+        opacity: 0
+        & path
+            stroke-dasharray: 7000
+            stroke-dashoffset: 7000
+            fill: rgba(18, 143, 94, 0)
+            transition: .36s ease
+
+
+.loading-svg.first path 
+    animation: loading-svg-first 1.5s linear forwards
+
+.loading-svg.second path 
+    animation: loading-svg-second 1.5s linear forwards
+
+.loading-svg.third path 
+    animation: loading-svg-third 1.5s linear forwards
+
+.loading-svg.fourth path 
+    animation: loading-svg-fill .5s linear forwards
+    
+
+
+@keyframes loading-svg-first
+    0% 
+        stroke-dashoffset: 7000
+    100%
+        stroke-dashoffset: 9000
+
+
+@keyframes loading-svg-second
+    0% 
+        stroke-dashoffset: 9000
+    100%
+        stroke-dashoffset: 12000
+
+
+@keyframes loading-svg-third
+    0% 
+        stroke-dashoffset: 12000
+    100%
+        stroke-dashoffset: 14000
+
+
+@keyframes loading-svg-fill
+
+    0% 
+        fill: rgba(18, 143, 94, 0)
+    100%
+        fill: rgba(18, 143, 94, 1)
+
+
+
+
+
+// Color Variables
+
+$green: #128F5E
+$yellow: #F0D178
+
+
+::selection
+    background-color: $green
+    color: #fff
+  
+
+// Fonts
+$nunito-font-path: "assets/fonts"
+
+
+@font-face 
+    font-family: 'Nunito Sans Light'
+    src: url("#{$nunito-font-path}/NunitoSans-Light.ttf")
+
+@font-face 
+    font-family: 'Nunito Sans Regular'
+    src: url("#{$nunito-font-path}/NunitoSans-Regular.ttf")
+
+@font-face 
+    font-family: 'Nunito Sans Bold'
+    src: url("#{$nunito-font-path}/NunitoSans-Bold.ttf")
+
+
+// General
+
+p, .light, footer .links a, .kresky, li, .subtitles h4, header.offer h4
+    font-family: 'Nunito Sans Light'
+    font-weight: 300
+
+.regular-btn, nav a, h1,h2,h5, .bold, .comic__link
+    font-family: 'Nunito Sans Light'
+    font-weight: 700
+
+
+button a,h3, .offers h4, .index h4, .regular
+    font-family: 'Nunito Sans Regular'
+    font-weight: 400
+
+
+.font-w 
+    color: #FFFFFF
+
+.font-b 
+    color: #101010
+
+a, .regular-btn
+    text-decoration: none
+    z-index: 3
+
+h1, h2 
+    margin: 0
+
+
+.flex 
+    display: flex
+
+.column
+    flex-direction: column
+
+.center 
+    align-self: center
+
+ul 
+    list-style: none
+    padding: 0
+
+
+    
+
+     
+// Buttons
+
+button 
+    background-color: transparent
+    border: none
+    cursor: pointer
+    border-radius: 2px
+
+.regular-btn 
+    color: #ffffff
+    width: max-content
+
+
+.green-btn 
+    background-color: rgba(18, 143, 94, .8)
+    transition: .36s ease
+    z-index: 2
+
+.green-btn:hover 
+    background-color: rgba(18, 143, 94, 1)
+
+.transparent-btn
+    background-color: transparent
+    border: 1px solid #FFFFFF
+
+.nav-area
+    position: absolute
+    width: 100%
+    height: 20px
+    left: 0
+    z-index: -1
+
+section 
+    position: relative
+
+body 
+    margin: 0
+    overflow-x: hidden
+    width: 100vw
+
+
+// Header 
+
+.header-span 
+    background: #101010
+    justify-content: space-between
+
+
+header
+    height: 100vh
+    background-color: #101010
+    flex-direction: column
+    position: relative
+    background-size: cover
+
+nav 
+    justify-content: space-between
+    width: 100%
+    
+nav div
+     align-items: center
+     height: min-content
+
+
+nav .title 
+    transition: .36s ease
+
+header nav .title
+    color: #ffff
+
+.link-container 
+    padding: 0
+
+
+nav a.fb 
+    display: inline-flex
+
+.header-img 
+    position: absolute
+    bottom: 0
+    right: -6%
+
+
+header .center 
+    text-align: center
+    flex-direction: column
+    align-items: center
+
+
+header .line-vertical 
+    width: 1px
+    background-color: #ffffff
+
+
+// .nav-bar
+//     align-items: center
+//     justify-content: center
+//     position: relative
+//     width: 45%
+//     margin: 17.5% 0 15%
+
+// .circlebox
+//     margin: 0 20px
+
+// .circlebox button 
+//     padding: 0
+//     margin: 0 12px
+
+
+// .nav-bar__leftbtn span, 
+// .nav-bar__rightbtn span
+//     height: 1px
+//     width: 59px
+//     background-color: #ffffff
+
+// .nav-bar__rightbtn,
+// .nav-bar__leftbtn
+//     display: flex
+//     align-items: center
+//     position: relative
+//     padding: 3% 0
+
+// .nav-bar__rightbtn img,
+// .nav-bar__leftbtn img 
+//     position: absolute
+
+// .nav-bar__rightbtn img
+//     right: 0
+
+// .nav-bar__rightbtn img
+//     transform: rotate(180deg)
+//     right: -2%
+
+// .nav-bar__leftbtn img
+//     left: 0    
+
+// .nav-bar__leftbtn img
+//     left: -2%
+
+// .nav-bar__circle
+//     border-radius: 100%
+//     width: 7px
+//     height: 7px
+//     border: 1px solid #ffffff
+//     box-sizing: border-box
+//     display: block
+
+
+// .nav-bar__circle.full
+//     background-color: #ffffff
+
+
+
+.global-nav 
+    position: fixed
+    justify-content: space-between
+    width: -webkit-fill-available
+    top: 0
+    background-color: #ffffff
+    z-index: 4
+    margin: 0
+    transition: .36s ease
+    transform: translateY(-100%)
+    & a,p 
+        color: #101010
+    & div
+        padding-right: 0
+        align-items: center
+        height: auto
+    & .logo 
+        padding-left: 0
+    & .fb
+        display: flex
+    & a:hover span span
+        color: $green
+
+
+
+.global-nav.on
+    transform: translateY(0)
+
+
+// Animations
+
+@keyframes first-path
+    0% 
+        stroke-dasharray: 332
+    100%
+        stroke-dasharray: 370
+
+
+@keyframes second-path
+    0% 
+        stroke-dasharray: 332
+    100%
+        stroke-dasharray: 370
+
+@keyframes third-path
+    0% 
+        stroke-dashoffset: 800
+    100%
+        stroke-dashoffset: 1600
+
+    
+@keyframes fourth-path
+    0% 
+        stroke-dasharray: 70
+    100%
+        stroke-dasharray: 110
+    
+
+
+
+// About
+
+
+.about .left 
+    flex-direction: column
+    position: relative
+
+.about .headers 
+    position: relative
+
+.about .colorbar
+    background-color: $green
+    position: absolute
+    z-index: -1
+    left: 0
+
+.about h3 span.ico
+    position: relative
+    top: 1px
+
+.about-photo
+    position: absolute
+    bottom: 0
+
+.about .right
+    flex-direction: column
+
+.about .right a 
+    width: max-content
+
+
+.about .right button
+    width: fit-content
+    & span
+        transition: .36s ease
+
+.about .right a:hover span
+    transform: translateY(15px)
+
+.about .right button span
+    width: 1px
+    background-color: #ffffff
+    position: relative
+    justify-content: center
+
+.about .right img
+    position: relative
+
+
+
+// Offer
+
+
+.offer .right p 
+    margin: 0
+
+
+.offer .right .flex div
+    display: flex
+
+.offer .right .flex div.last 
+    margin-bottom: 0
+
+.offer a 
+    margin-top: auto
+
+.offer .centered
+    transform: translateY(-10px)
+
+.offer .higher
+    transform: translateY(-30px)
+
+.offer .right
+    & img, p
+        opacity: 0
+        transition: .74s ease
+
+.offer .right.visible 
+    & img, p 
+        opacity: 1
+
+.offer .right.visible .first
+    & div
+        &:nth-child(1) img
+            transition-delay: .5s
+        &:nth-child(2) img
+            transition-delay: .7s
+        &:nth-child(3) img
+            transition-delay: .9s
+        &:nth-child(4) img
+            transition-delay: 1.1s
+        &:nth-child(5) img
+            transition-delay: 1.3s
+    & div
+        &:nth-child(1) p
+            transition-delay: .6s
+        &:nth-child(2) p
+            transition-delay: .8s
+        &:nth-child(3) p
+            transition-delay: 1s
+        &:nth-child(4) p
+            transition-delay: 1.2s
+        &:nth-child(5) p
+            transition-delay: 1.4s
+        
+.offer .right.visible .second
+    & div
+        &:nth-child(1) img
+            transition-delay: 1.5s
+        &:nth-child(2) img
+            transition-delay: 1.7s
+        &:nth-child(3) img
+            transition-delay: 1.9s
+        &:nth-child(4) img
+            transition-delay: 2.1s
+    & div
+        &:nth-child(1) p
+            transition-delay: 1.6s
+        &:nth-child(2) p
+            transition-delay: 1.8s
+        &:nth-child(3) p
+            transition-delay: 2s
+        &:nth-child(4) p
+            transition-delay: 2.2s
+
+
+    
+
+// Benefits
+
+.benefits .bg
+    position: relative
+    background-size: cover
+
+.benefits ul 
+    padding: 0
+
+.benefits ul p 
+    margin: 0
+
+.benefits li 
+    display: flex
+
+.benefits ul img 
+    margin-right: 12px
+    align-self: flex-start
+    margin-top: 5px
+
+
+a.comic__link 
+    position: absolute
+    transition: .36s ease
+    z-index: 2
+    & svg
+        position: absolute
+        left: 0
+        pointer-events: none
+        z-index: -1
+
+a.comic__link svg g 
+    fill: transparent
+
+a.comic__link:hover svg g
+    fill: #ffffff
+
+a.comic__link:hover 
+    color: $green
+
+.comic__link svg g 
+    transition: .36s ease
+
+// Clients
+
+
+.clients .first .right 
+    border-left: 1px solid #101010
+
+.clients .first .right div
+    display: flex
+
+.clients .second
+    position: relative
+
+.clients .second .left,
+.clients .second .right 
+    background-size: cover
+
+
+
+.clients .second .left 
+    cursor: pointer
+    position: relative
+    & .container
+        z-index: 2
+    & .container, .absolute__box
+        transition: .74s ease
+    &::after
+        width: 100%
+        height: 0
+        position: absolute
+        content: ''
+        left: 0
+        bottom: 0
+        transition: .74s ease
+        background-color: #101010
+        opacity: .75
+    & h2, p 
+        z-index: 2
+    &:hover::after
+        height: 50%
+    &:hover button
+        background-color: rgba(18, 143, 94, .8)
+        color: #ffffff
+        border: 1px solid transparent
+    & button:hover
+        background-color: rgba(18, 143, 94, 1)
+    
+
+.clients .second .right 
+    background-color: #101010
+    cursor: pointer
+    position: relative
+    & .container
+        transition: .74s ease
+        z-index: 2
+    &::after
+        width: 100%
+        height: 0
+        position: absolute
+        content: ''
+        left: 0
+        bottom: 0
+        transition: .74s ease
+        background-color: #101010
+        opacity: .75
+    &:hover::after
+        height: 50%
+    &:hover
+        button 
+            background-color: $green
+            color: #ffffff
+            background-color: rgba(18, 143, 94, .8)
+            border: 1px solid transparent
+    & button:hover
+        background-color: rgba(18, 143, 94, 1)
+    
+
+.clients button 
+    transition: .36s ease
+    z-index: 2
+
+
+.clients .second .flex.wrapper
+    transition: .36s ease
+
+
+.clients .second .right .flex
+    height: 100%
+
+
+.absolute__box
+    display: flex
+    flex-direction: column
+    position: absolute
+    pointer-events: none
+    z-index: 2
+    & .box1
+        height: 86%
+        width: 100%
+        border-right: 1px solid $yellow
+        border-left: 1px solid $yellow
+    & .box2
+        height: 14%
+        width: 100%
+        border-left: 1px solid #101010
+        border-right: 1px solid #101010
+        border-bottom: 1px solid #101010
+
+
+// Freestyle
+
+
+.freestyle
+    position: relative
+
+.freestyle div.flex.column 
+    position: absolute
+    bottom: 0
+
+.freestyle .wrapper
+    background-color: #ffffff
+
+.freestyle h2 
+    z-index: 2
+
+
+.freestyle .horizontal-line
+    height: 1px
+    background-color: #101010
+    align-self: center
+
+.freestyle button
+    background-color: rgba(18, 143, 94, .75)
+    border: 1px solid $green
+    transition: .36s ease
+
+.freestyle button:hover
+    background-color: rgba(18, 143, 94, 1)
+
+.freestyle span.font-w
+    background: $yellow
+    position: absolute
+    width: 100%
+
+
+// Categories
+
+
+.categories .wrapper
+    width: 100%
+
+.categories .front button
+    color: $green
+    position: relative
+    text-transform: uppercase
+
+.categories .front button.current 
+    color: #101010
+
+.gallery 
+    flex-wrap: wrap
+    width: 100%
+    position: relative
+    & .photobox
+        margin: 0
+        overflow: hidden
+        cursor: pointer
+        & img
+            transition: 3.5s
+        &:hover img
+            transform: scale(1.1)
+
+
+
+// Gallery animations // 
+
+
+.gallery div.active 
+    top: 0px
+    left: 0px
+    visibility: visible
+    will-change: transform
+    opacity: 1
+    transition-duration: 250ms
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+    transition-property: transform, opacity
+    transform: translate(0px, 0px) scale(1)
+
+
+.gallery div.delete 
+    position: absolute
+    top: 0px
+    left: 0px
+    visibility: hidden
+    will-change: transform
+    opacity: 0
+    transform: translate(388px, 0px) scale(0.001)
+    transition-duration: 250ms
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+    transition-property: transform, opacity
+    z-index: -1
+
+
+// Answers 
+
+.answers
+    width: 100%
+    position: relative
+
+.answers .wrapper p 
+    opacity: 0
+    transition: .74s ease
+
+.answers .wrapper img
+    align-self: flex-start
+    position: relative
+    opacity: 0
+    transition: .74s ease
+
+.answers .wrapper.visible img,
+.answers .wrapper.visible p 
+    opacity: 1
+
+.answers .wrapper.visible .left
+    & .flex
+        &:nth-child(1) img
+            transition-delay: 1s
+        &:nth-child(2) img
+            transition-delay: 1.2s
+        &:nth-child(3) img
+            transition-delay: 1.4s
+        &:nth-child(4) img
+            transition-delay: 1.6s
+    & .flex
+        &:nth-child(1) p
+            transition-delay: 1.1s
+        &:nth-child(2) p
+            transition-delay: 1.3s
+        &:nth-child(3) p
+            transition-delay: 1.5s
+        &:nth-child(4) p
+            transition-delay: 1.7s
+        
+.answers .wrapper.visible .right
+    & .flex
+        &:nth-child(1) img
+            transition-delay: 1.8s
+        &:nth-child(2) img
+            transition-delay: 2s
+        &:nth-child(3) img
+            transition-delay: 2.2s
+        &:nth-child(4) img
+            transition-delay: 2.4s
+    & .flex
+        &:nth-child(1) p
+            transition-delay: 1.9s
+        &:nth-child(2) p
+            transition-delay: 2.1s
+        &:nth-child(3) p
+            transition-delay: 2.3s
+        &:nth-child(4) p
+            transition-delay: 2.5s
+            
+                
+
+.footer-svg 
+    position: absolute
+    bottom: 0
+    left: 0
+
+.footer-svg path
+    stroke-dasharray: 7000
+    stroke-dashoffset: 9402
+    fill: rgba(18, 143, 94, 1)
+    transition: .36s ease
+
+
+.footer-svg.visible path 
+    animation: footer-svg 5s linear forwards, svg-fill .2s linear 5.1s forwards
+
+
+
+@keyframes footer-svg
+    0% 
+        stroke-dashoffset: 9402
+    100%
+        stroke-dashoffset: 14000
+
+// @keyframes svg-fill
+
+//     0% 
+//         fill: rgba(18, 143, 94, 0)
+//     100%
+//         fill: rgba(18, 143, 94, 1)
+
+
+
+
+// Footer
+
+
+footer
+    background-color: $green
+    position: relative
+    overflow: hidden
+
+footer a, footer h4 
+    color: #ffffff
+
+footer .front 
+    width: 100%
+    justify-content: space-between
+
+
+footer .header
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            height: 1px
+            background-color: #ffffff
+
+footer .front .button-box
+    width: 100%
+    align-items: center
+
+
+footer .button-box button 
+    transition: .36s ease
+
+footer .button-box a:hover button
+    background-color: #ffffff
+    border: 1px solid #ffffff
+    color: $green
+
+footer .links 
+    justify-content: space-between
+
+
+footer .bottom
+    justify-content: space-between
+    position: absolute
+    left: 0
+    right: 0
+    margin: auto
+
+.bottom p 
+    margin: 0
+
+footer .bottom button
+    background-color: #ffffff
+    position: relative
+    overflow: hidden
+    border-radius: 3px
+    transition: .36s ease
+    & svg
+        position: absolute
+        left: 0
+        right: 0
+        margin: auto
+    & .arrow
+        transform: translateX(.5px)
+    & .arrow path
+        fill: $green
+        transition: .36s ease
+    & .line line 
+        stroke: $green
+        transition: .36s ease
+    &:hover
+        background-color: $green
+        & .arrow path
+            fill: #ffffff
+        & .line line 
+            stroke: #ffffff
+
+
+
+// Links hovers
+
+
+.link 
+  align-items: center
+  color: #000
+  text-decoration: none
+  display: flex
+
+
+/* Hide extra text */
+.mask 
+  position: relative
+  padding: 0
+
+  /*  Remove overflow to see how it works　:) */
+  overflow: hidden
+
+
+.link-container 
+  transition: transform 0.4s ease
+
+
+.title 
+  display: block
+
+  /*  Set same font-size and line height  */
+  transition: transform 0.4s ease
+
+
+.link-title1 
+  transform-origin: right center
+
+
+.link-title2 
+  transform-origin: left center
+  transform: rotate(20deg)
+
+
+.link-icon 
+  position: relative
+  background: #f8f8ff
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  overflow: hidden
+
+
+.icon 
+  display: block
+  position: absolute
+  transition: transform 0.4s ease
+
+
+
+/* Hover Action*/
+
+/* Move up two texts (20px = font-size) */
+
+/* Rotate texts a little bit */
+.link:hover .link-title1 
+  transform: rotate(20deg)
+
+
+.link:hover .link-title2 
+  transform: rotate(0)
+
+
+/* Move arrows to right */
+
+.link:hover .icon:nth-child(2) 
+  transform: translate(0px)
+
+
+footer a span 
+    color: #ffffff
+
+
+
+@supports (-moz-appearance:none)
+
+    header span .flex img
+        height: min-content
+        align-self: center
+
+    .offer .second img 
+        height: max-content
+        align-self: center
+
+    .footer-svg
+        bottom: -1px
+
+
+
+
+
+// Subtitles // 
+
+body.subtitles
+    & header
+        & h2
+            font-weight: normal
+    & section
+        & h2
+            font-weight: bold
+
+
+// Offers
+
+
+header.offer
+    background-image: none
+    background-color: white
+    & .left 
+        background-image: url('assets/images/offer/header.png')
+        background-size: cover
+
+
+
+// Details
+
+
+header.details
+    background-image: none
+    background-color: white
+    & .right
+        background-size: cover
+
+
+// Burgenland // 
+
+header.burgenland
+    & .right
+        background-image: url('assets/images/burgenland/header.png')
+
+

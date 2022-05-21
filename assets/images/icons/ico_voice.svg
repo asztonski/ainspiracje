@@ -1,0 +1,25 @@
+<svg id="ICO_voice" data-name="ICO voice" xmlns="http://www.w3.org/2000/svg" width="23" height="20" viewBox="0 0 23 20">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #128f5e;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke-width: 1px;
+      }
+    </style>
+  </defs>
+  <path id="Kształt_694_kopia_3" data-name="Kształt 694 kopia 3" class="cls-1" d="M9.977,18.263L5.7,13.983a0.187,0.187,0,0,1-.08.048H2.52A1.373,1.373,0,0,1,.972,12.992V7.008A1.373,1.373,0,0,1,2.52,5.968H5.583L9.977,1.454V18.263Z"/>
+  <path id="Elipsa_694" data-name="Elipsa 694" class="cls-2" d="M14.376,5.855c2.024,0,3.665,1.965,3.665,4.389s-1.641,4.39-3.665,4.39"/>
+  <path id="Elipsa_695" data-name="Elipsa 695" class="cls-2" d="M13.765,8.782a1.358,1.358,0,0,1,1.222,1.463,1.359,1.359,0,0,1-1.222,1.463"/>
+  <path id="Elipsa_696" data-name="Elipsa 696" class="cls-1" d="M15.719,2.9c3.215,0,5.821,3.289,5.821,7.347s-2.606,7.348-5.821,7.348"/>
+</svg>

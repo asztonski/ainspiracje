@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64.072" height="64" viewBox="0 0 64.072 64">
+  <g id="ICO_quality" data-name="ICO quality" transform="translate(-739.964 -2139)">
+    <rect id="Prostokąt_3_kopia_6" data-name="Prostokąt 3 kopia 6" width="64" height="64" transform="translate(740 2139)" fill="#fff"/>
+    <path id="Kształt_18_kopia" data-name="Kształt 18 kopia" d="M751.964,2173.641l-10.5,18.187,11.294-1.562,4.294,10.562,8.982-15.255" fill="none" stroke="#101010" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Kształt_18_kopia_2" data-name="Kształt 18 kopia 2" d="M792.036,2173.641l10.5,18.187-11.294-1.562-4.294,10.562-8.982-15.255" fill="none" stroke="#101010" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <line id="Kształt_19" data-name="Kształt 19" y1="9" x2="6" transform="translate(753 2181)" fill="none" stroke="#101010" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <line id="Kształt_19_kopia" data-name="Kształt 19 kopia" x1="6" y1="9" transform="translate(786 2182)" fill="none" stroke="#101010" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Kształt_20" data-name="Kształt 20" d="M765.734,2166l3.933,4,9.832-10" fill="none" stroke="#101010" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Elipsa_6_kopia_2" data-name="Elipsa 6 kopia 2" d="M764.351,2149.483a15.081,15.081,0,0,1,15.486.1m-21.184,21.87a16.472,16.472,0,0,1-.37-15.506m20.925,21.6a15.093,15.093,0,0,1-14.214.084m20.831-21.506a16.473,16.473,0,0,1-.356,15.158" fill="none" stroke="#101010" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <ellipse id="Elipsa_6_kopia" data-name="Elipsa 6 kopia" cx="22" cy="22.37" rx="22" ry="22.37" transform="translate(750.12 2140.88)" fill="none" stroke="#101010" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+</svg>
