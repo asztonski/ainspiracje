@@ -9,226 +9,206 @@ $breakpoint-desktop: 1025px
 $green: #128F5E
 $yellow: #F0D178
 
-
-
 @media (min-width: $breakpoint-desktop)
 
-    ::-moz-selection 
+    ::-moz-selection
         background-color: $green
         color: #fff
-    
-    ::-webkit-scrollbar 
+
+    ::-webkit-scrollbar
         background: $yellow
         width: 4px
 
-  
-    ::-webkit-scrollbar-thumb 
+    ::-webkit-scrollbar-thumb
         background: $green
 
-
-    .mobile 
+    .mobile
         display: none
 
-    .desktop 
-        display: flex  
+    .desktop
+        display: flex
 
     a, .regular-btn
         font-size: 0.9375vw
         text-decoration: none
 
-    h1, h2 
+    h1, h2
         font-size: 3.75vw
         margin: 0
-    
-    h3 
+
+    h3
         font-size: 1.5104166666666667vw
         margin: 0 0 10px 0
-    
-    h5 
+
+    h5
         font-size: 19px
         margin: 10px 0 0
-    
-    
+
     .center-text
         margin: 10px 0 40px
-        
-    
-         
+
     // Buttons
-    
-    .regular-btn 
+
+    .regular-btn
         padding: 14.5px 36.9px
-    
-    
+
     .nav-area
         height: 20px
 
-
-
     // Animations
-
 
     // Signs animation
 
+    .header-sign .first-path,
+    .about-sign .first-path
+        stroke-dasharray: 332
+        stroke-dashoffset: 3000
 
-     .header-sign .first-path,
-     .about-sign .first-path
-         stroke-dasharray: 332
-         stroke-dashoffset: 3000
-     
-     .loaded .header-sign .first-path,
-     .about-sign.visible .first-path
-         animation: first-path
-         animation-duration: 2s
-         animation-delay: 1s
-         animation-fill-mode: forwards
-     
-     
-         
-     .header-sign .second-path,
-     .about-sign .second-path
-         stroke-dasharray: 332
-         stroke-dashoffset: 3000
-     
-     .loaded .header-sign .second-path,
-     .about-sign.visible .second-path
-         animation: second-path
-         animation-duration: 2s
-         animation-delay: 2s
-         animation-fill-mode: forwards
-     
-         
-     .header-sign .third-path,
-     .about-sign .third-path
-         stroke-dasharray: 800
-         stroke-dashoffset: 800
-     
-     .loaded .header-sign .third-path,
-     .about-sign.visible .third-path
-         animation: third-path
-         animation-duration: 5s
-         animation-delay: 1.9s
-         animation-fill-mode: forwards
-         
-     .header-sign .fourth-path,
-     .about-sign .fourth-path
-         stroke-dasharray: 70
-         stroke-dashoffset: 70
-     
-     .loaded .header-sign .fourth-path,
-     .about-sign.visible .fourth-path
-         animation: fourth-path
-         animation-duration: 1s
-         animation-delay: 6.525s
-         animation-fill-mode: forwards
-     
+    .loaded .header-sign .first-path,
+    .about-sign.visible .first-path
+        animation: first-path
+        animation-duration: 2s
+        animation-delay: 1s
+        animation-fill-mode: forwards
 
-    
+    .header-sign .second-path,
+    .about-sign .second-path
+        stroke-dasharray: 332
+        stroke-dashoffset: 3000
+
+    .loaded .header-sign .second-path,
+    .about-sign.visible .second-path
+        animation: second-path
+        animation-duration: 2s
+        animation-delay: 2s
+        animation-fill-mode: forwards
+
+    .header-sign .third-path,
+    .about-sign .third-path
+        stroke-dasharray: 800
+        stroke-dashoffset: 800
+
+    .loaded .header-sign .third-path,
+    .about-sign.visible .third-path
+        animation: third-path
+        animation-duration: 5s
+        animation-delay: 1.9s
+        animation-fill-mode: forwards
+
+    .header-sign .fourth-path,
+    .about-sign .fourth-path
+        stroke-dasharray: 70
+        stroke-dashoffset: 70
+
+    .loaded .header-sign .fourth-path,
+    .about-sign.visible .fourth-path
+        animation: fourth-path
+        animation-duration: 1s
+        animation-delay: 6.525s
+        animation-fill-mode: forwards
+
     // Header 
-    
-    .header-span 
+
+    .header-span
         padding: 0 20px
-    
+
     .header-span p
         font-size: 0.625vw
         letter-spacing: 2.16px
-    
-    header p.regular span 
+
+    header p.regular span
         display: inline-flex
-    
-    .header-span img 
+
+    .header-span img
         margin: 0 7px
-    
-    
+
     header
-        background-image: url("assets/images/header.png")
-        background-position: 65% 0
-    
-    nav 
+        &::after
+            background-image: url("assets/images/header.jpg")
+            background-position: 65% 0
+
+    nav
         margin: 36px 0
         width: 100%
-        
+
     nav div
-         padding-right: 12%
-    
+        padding-right: 12%
+
     nav .logo
         padding-left: 11%
-    
-    nav a 
+
+    nav a
         margin-right: 34px
-    
-    nav .title 
+
+    nav .title
         letter-spacing: 1.44px
         font-size: 16px
-    
-    
-    .header-img 
-        right: -6%
-    
-    
-    header .center 
+
+    .header-img
+        right: 1.25%
+
+    header .center
         text-align: center
         margin: auto 0 5% 0
-    
-    header .center svg 
+
+    header .center svg
         margin-bottom: 44px
-    
-    header .line-vertical 
+
+    header .line-vertical
         height: 100px
         width: 1px
         margin-bottom: 50px
-    
+
     header .line-vertical.second
         margin-bottom: 80px
-    
+
     header h2
         font-size: 1.5104166666666667vw
-    
+
     // .nav-bar
     //     align-items: center
     //     justify-content: center
     //     position: relative
     //     width: 45%
     //     margin: 17.5% 0 15%
-    
+
     // .circlebox
     //     margin: 0 20px
-    
+
     // .circlebox button 
     //     padding: 0
     //     margin: 0 12px
-    
-    
+
     // .nav-bar__leftbtn span, 
     // .nav-bar__rightbtn span
     //     height: 1px
     //     width: 59px
     //     background-color: #ffffff
-    
+
     // .nav-bar__rightbtn,
     // .nav-bar__leftbtn
     //     display: flex
     //     align-items: center
     //     position: relative
     //     padding: 3% 0
-    
+
     // .nav-bar__rightbtn img,
     // .nav-bar__leftbtn img 
     //     position: absolute
-    
+
     // .nav-bar__rightbtn img
     //     right: 0
-    
+
     // .nav-bar__rightbtn img
     //     transform: rotate(180deg)
     //     right: -2%
-    
+
     // .nav-bar__leftbtn img
     //     left: 0    
-    
+
     // .nav-bar__leftbtn img
     //     left: -2%
-    
+
     // .nav-bar__circle
     //     border-radius: 100%
     //     width: 7px
@@ -236,13 +216,11 @@ $yellow: #F0D178
     //     border: 1px solid #ffffff
     //     box-sizing: border-box
     //     display: block
-    
-    
+
     // .nav-bar__circle.full
     //     background-color: #ffffff
-    
-    
-    .global-nav 
+
+    .global-nav
         padding: 10px 30px 10px 10px
         & .wrapper
             margin-right: 3.4%
@@ -251,242 +229,219 @@ $yellow: #F0D178
         & .fb
             margin-right: 20px
 
-    .global-nav.on 
+    .global-nav.on
         transform: translateY(0)
-    
-    
-    
-    
+
     // Signs animation
-    
-    
+
     .header-sign .first-path,
     .about-sign .first-path
         stroke-dasharray: 332
         stroke-dashoffset: 3000
-    
+
     .header-sign .first-path,
     .about-sign.visible .first-path
         animation: first-path
         animation-duration: 2s
         animation-delay: 1s
         animation-fill-mode: forwards
-    
-    
-        
+
     .header-sign .second-path,
     .about-sign .second-path
         stroke-dasharray: 332
         stroke-dashoffset: 3000
-    
+
     .header-sign .second-path,
     .about-sign.visible .second-path
         animation: second-path
         animation-duration: 2s
         animation-delay: 2s
         animation-fill-mode: forwards
-    
-        
+
     .header-sign .third-path,
     .about-sign .third-path
         stroke-dasharray: 800
         stroke-dashoffset: 800
-    
+
     .header-sign .third-path,
     .about-sign.visible .third-path
         animation: third-path
         animation-duration: 5s
         animation-delay: 1.9s
         animation-fill-mode: forwards
-        
+
     .header-sign .fourth-path,
     .about-sign .fourth-path
         stroke-dasharray: 70
         stroke-dashoffset: 70
-    
+
     .header-sign .fourth-path,
     .about-sign.visible .fourth-path
         animation: fourth-path
         animation-duration: 1s
         animation-delay: 6.525s
         animation-fill-mode: forwards
-    
-    
+
     @keyframes first-path
-        0% 
+        0%
             stroke-dasharray: 332
         100%
             stroke-dasharray: 370
-    
-    
+
     @keyframes second-path
-        0% 
+        0%
             stroke-dasharray: 332
         100%
             stroke-dasharray: 370
-    
+
     @keyframes third-path
-        0% 
+        0%
             stroke-dashoffset: 800
         100%
             stroke-dashoffset: 1600
-    
-        
+
     @keyframes fourth-path
-        0% 
+        0%
             stroke-dasharray: 70
         100%
             stroke-dasharray: 110
-        
-    
-    
-    
+
     // About
-    
+
     .about .nav-area
         top: -5%
-    
-    .about .left 
+
+    .about .left
         padding-top: 13%
         align-items: flex-end
-        
-    
-    .about .headers 
+
+    .about .headers
         left: 14.5%
-    
+
     .about .colorbar
         height: 10.107%
         width: 83.75%
         left: 0
         top: 32%
-    
+
     .about h3 span.ico
         top: 1px
         margin-left: 5px
-    
-    
-    .about .left p 
+
+    .about .left p
         width: 34.5%
         margin: 0 3% 0 0
-    
+
     .about .about-sign
         margin-right: 16%
         margin-top: 30px
-    
+
     .about-photo
         position: absolute
-        left: 14.5%
+        left: 20%
         bottom: 0
-    
+
     .about .right
         background-image: url("assets/images/about-bg.png")
         height: 48.958333333333336vw
         width: 69.33%
         justify-content: flex-end
-    
+
     .about .right button
         padding: 31px 29px
-    
+
     .about .right button span
         width: 1px
         height: 68px
         background-color: #ffffff
-    
+
     .about .right img
         align-self: flex-end
         left: .5px
 
-    .about .headers button.sound 
+    .about .headers button.sound
         padding: 0 0 0 0px
-    
-    
-    
+
     // Offer
-    
+
     .offer .nav-area
         top: -7%
-    
+
     .offer
-        padding:10% 0 10% 12.5%
-    
+        padding: 10% 0 10% 12.5%
+
     .offer .left
         width: 35%
-    
-    .offer .right.flex 
+
+    .offer .right.flex
         margin-top: 1.75%
-    
-    
-    .offer .right p 
+
+    .offer .right p
         font-size: 0.9895833333333334vw
         width: 70%
         margin: 0
-    
-    
+
     .offer .right .flex div
         margin-bottom: 45px
         width: 115%
-    
+
     .offer .first
         margin-right: 15.5%
         margin-left: 1%
-    
+
     .offer .right img
         margin-right: 17px
-    
+
     .offer div p.thin
         width: 36%
-    
-    .offer .right .flex div.last 
+
+    .offer .right .flex div.last
         margin-bottom: 0
-    
-    .offer a 
+
+    .offer a
         margin-top: auto
-    
+
     .offer .centered
         transform: translateY(-10px)
-    
+
     .offer .higher
         transform: translateY(-30px)
-    
-    
-        
-    
+
     // Benefits
-    
-    .benefits .nav-area 
+
+    .benefits .nav-area
         top: -40%
-    
+
     .benefits
         padding: 0 28.6% 0 0
-    
-    .benefits h2 
+
+    .benefits h2
         margin-bottom: 35px
-    
+
     .benefits .bg
         background-image: url('assets/images/benefits-bg.png')
         padding: 6.183% 0 6.183% 17.75%
         background-position: 95%
         width: 1216.68px
-    
-    .benefits ul 
+
+    .benefits ul
         padding: 0
-    
-    .benefits ul p 
+
+    .benefits ul p
         font-size: 0.9895833333333334vw
         line-height: 26.33px
         margin: 0
-    
-    .benefits li 
+
+    .benefits li
         width: 37%
         margin-bottom: 20px
-    
-    .benefits ul img 
+
+    .benefits ul img
         margin-right: 12px
         align-self: flex-start
         margin-top: 5px
-    
-    
-    a.comic__link 
+
+    a.comic__link
         left: 59.1%
         bottom: 16.5%
         padding: 13px 43.5px
@@ -495,42 +450,38 @@ $yellow: #F0D178
         & svg
             left: 0
             top: -113.5px
-    
+
     // Clients
-    
-    .clients .nav-area 
+
+    .clients .nav-area
         top: 9%
-    
+
     .clients .first
         padding: 0 25% 0 0
-    
+
     .clients .first div
         width: 90%
         padding: 7.852% 0 2.5%
-    
-    .clients .first div div 
+
+    .clients .first div div
         padding: 10% 0 0
-    
+
     .clients .first .left
         align-items: flex-end
-    
+
     .clients .first .left div
         width: max-content
         padding-right: 12.5%
-    
-    
+
     .clients .first .right div
         align-items: flex-end
         padding-left: 5%
-    
-    
+
     .clients .second .left,
-    .clients .second .right 
+    .clients .second .right
         width: 50%
         padding: 10.278% 0 4.279%
-    
-    
-    
+
     .clients .second .left, .offers .wrapper .left
         background-image: url('assets/images/clientindividual.png')
         &::after
@@ -544,8 +495,7 @@ $yellow: #F0D178
             height: 50%
         &:hover .flex.wrapper
             transform: translateX(-10px)
-        
-    
+
     .clients .second .right, .offers .wrapper .right
         background-image: url('assets/images/clientgroup.png')
         &::after
@@ -557,56 +507,53 @@ $yellow: #F0D178
             height: 50%
         &:hover .flex.wrapper
             transform: translateX(-10px)
-    
-    
-    
+
     .clients .second .left .flex,
     .clients .second .right .flex
         width: 74%
         position: relative
         top: 1.5px
-    
+
     .clients .second .left .flex.wrapper
         margin-right: 4%
-    
+
     .clients .second .right .flex.wrapper
         align-self: flex-end
         margin-right: 2.5%
-    
+
     .clients .second .left .container
         margin-left: 30%
-    
+
     .clients .second .right .container
-         margin-left: 4% 
-    
+        margin-left: 4%
+
     .clients .second .right .flex
         align-self: flex-start
         height: 100%
-    
+
     .clients .second .left .flex.wrapper
         width: 68%
         align-self: flex-end
-    
+
     .clients .second .right .flex.wrapper
         width: 64%
-    
-    
-    .clients .second .left p.font-w 
-        margin-bottom: 30px  
-    
-    .clients .second .right p.font-w 
+
+    .clients .second .left p.font-w
+        margin-bottom: 30px
+
+    .clients .second .right p.font-w
         margin-bottom: auto
         align-self: flex-end
-    
-    .clients .second h2 
+
+    .clients .second h2
         align-self: flex-start
-    
+
     .clients .second .left p.font-w
         align-self: flex-end
-    
+
     .clients .second button
         align-self: flex-start
-    
+
     .absolute__box
         height: 43.125%
         width: 78%
@@ -628,81 +575,76 @@ $yellow: #F0D178
             border-left: 1px solid #101010
             border-right: 1px solid #101010
             border-bottom: 1px solid #101010
-    
-    
+
     // Freestyle
-    
-    
+
     .freestyle
         padding-top: 5%
-    
+
     .freestyle .container
         background-image: url("assets/images/freestyle-bg.png")
         width: 76.25%
         height: 74.30340557275542vh
         align-self: flex-end
-    
-    .freestyle div.flex.column 
+
+    .freestyle div.flex.column
         position: absolute
         bottom: 0
         left: 12.5%
         width: 30.794%
-    
+
     .freestyle .wrapper
         background-color: #ffffff
         padding: 5% 0 6% 5%
         & p
             margin-top: 20px
-    
-    
+
     .freestyle .button-box
         width: 95%
         justify-content: space-between
         align-self: flex-end
-    
+
     .freestyle .horizontal-line
         width: 25.598%
         align-self: center
-    
-    
+
     .freestyle span.font-w
         width: 100%
         text-align: end
         left: -60%
         padding: 0 4%
         height: 19.5%
-    
+
     .freestyle .icon-box
         margin-left: 49%
 
     .freestyle a.desktop
         width: 67%
         align-self: flex-end
-        & button 
+        & button
             width: 100%
 
-    .freestyle img.desktop 
+    .freestyle img.desktop
         display: inline
-    
-    
+
     // Categories
-    
+
     .categories
         padding: 10% 12.5% 0
-    
-    .categories .front p 
+
+    .categories .front p
         font-size: 1.5104166666666667vw
         margin: 0 0 7%
-    
+
     .categories .wrapper
         align-self: flex-end
         padding-bottom: 2%
         margin-left: 10.5%
         width: 100%
-    
-    .categories span.title 
+
+    .categories span.title
         font-size: 16px
-    
+
     .categories .front button
         padding-right: 30px
         &::after
@@ -725,103 +667,95 @@ $yellow: #F0D178
             position: absolute
             background-color: #101010
             opacity: .25
-        
-    
-    .categories .front button.current 
+
+    .categories .front button.current
         &::after
             width: 67%
-    
-    .gallery 
+
+    .gallery
         margin-top: 2.5%
         & img
             width: 100%
         & p
             margin: 5px 0 30px
-    
-    .gallery .photobox 
+
+    .gallery .photobox
         margin: 0 30px 0 0
-    
-    .gallery p 
+
+    .gallery p
         font-size: 0.6770833333333334vw
         letter-spacing: 0.858px
         margin: 6px 0 28px
-    
+
     .categories button.center
         margin-top: 30px
-    
-    
+
     // Answers 
-    
+
     .answers
         padding: 5% 12.5% 16%
         width: 100%
-    
+
     .loaded .answers .wrapper .flex
         background-image: none
-    
+
     .answers .headers, .answers .left, .answers .right
         width: 33%
-    
-    .answers .wrapper p 
+
+    .answers .wrapper p
         width: 75%
         margin: 0 0 30px
-    
+
     .answers .wrapper div img
         align-self: flex-start
         margin-right: 12.5px
         top: 2.5px
 
-    
-    
     // Footer
-    
-    
+
     footer
         padding: 5% 12.5% 7.5%
-    
-    
-    footer .front 
+
+    footer .front
         width: 95.9%
         justify-content: space-between
-    
-    footer .front p 
+
+    footer .front p
         margin-bottom: 25px
-    
-    
+
     footer .header
-            &::after
-                height: 1px
-                width: 120%
-                bottom: 26.5%
-                left: 0
-    
+        &::after
+            height: 1px
+            width: 120%
+            bottom: 26.5%
+            left: 0
+
     footer .front .flex
         width: 32%
-    
+
     footer .front .button-box
         width: 100%
         align-items: center
-    
+
     footer .button-box a.fb
         margin-left: 30px
-    
-    footer .links 
+
+    footer .links
         width: 83.75%
         margin-top: 2.5%
         justify-content: space-between
-    
+
     footer h4
         font-size: 1.5104166666666667vw
-    
+
     footer .links a
         font-size: 0.8333333333333334vw
         margin-bottom: 10px
-    
+
     footer .bottom
         width: 97.5%
         bottom: -10%
-    
-    
+
     footer .bottom button
         padding: 64px 28.5px
         bottom: 5px
@@ -832,105 +766,88 @@ $yellow: #F0D178
             transform: translateX(.5px)
         &:hover
             transform: translateY(-9px)
-    
+
     .kresky
         font-size: 0.8333333333333334vw
         & svg
             margin-left: 7px
-    
-    
-    
-    
-    // Links hovers
-    
-    
-    .link 
-      height: 30px
-      align-items: center
-      color: #000
-      text-decoration: none
-      display: flex
-    
-    
-    /* Hide extra text */
-    .mask 
-      height: 20px
-    
-    
-    
-    .title 
-      /*  Set same font-size and line height  */
-      font-size: 20px
-      line-height: 20px
-    
-    
-    .link-icon 
-      width: 35px
-      height: 35px
-      margin-left: 10px
-    
-    
-    .icon:nth-child(2) 
-      transform: translate(-40px)
-    
-    
-    /* Hover Action*/
-    
-    /* Move up two texts (20px = font-size) */
-    .link:hover .link-container 
-      transform: translateY(-20px)
-    
-    
-    /* Rotate texts a little bit */
-    .link:hover .link-title1 
-      transform: rotate(20deg)
-    
-    
-    .link:hover .link-title2 
-      transform: rotate(0)
-    
-    
-    /* Move arrows to right */
-    .link:hover .icon:first-child 
-      transform: translate(40px)
-    
-    
-    .link:hover .icon:nth-child(2) 
-      transform: translate(0px)
 
-    
+    // Links hovers
+
+    .link
+        height: 30px
+        align-items: center
+        color: #000
+        text-decoration: none
+        display: flex
+
+    /* Hide extra text */
+    .mask
+        height: 20px
+
+    .title
+      /*  Set same font-size and line height  */
+        font-size: 20px
+        line-height: 20px
+
+    .link-icon
+        width: 35px
+        height: 35px
+        margin-left: 10px
+
+    .icon:nth-child(2)
+        transform: translate(-40px)
+
+    /* Hover Action*/
+
+    /* Move up two texts (20px = font-size) */
+    .link:hover .link-container
+        transform: translateY(-20px)
+
+    /* Rotate texts a little bit */
+    .link:hover .link-title1
+        transform: rotate(20deg)
+
+    .link:hover .link-title2
+        transform: rotate(0)
+
+    /* Move arrows to right */
+    .link:hover .icon:first-child
+        transform: translate(40px)
+
+    .link:hover .icon:nth-child(2)
+        transform: translate(0px)
+
     // OFFERS //
 
-    body.subtitles 
-        & section h4, header h4 
+    body.subtitles
+        & section h4, header h4
             font-size: 19px
-        & section h2 
+        & section h2
             font-size: 72px
         .global-nav .wrapper
             justify-content: flex-end
 
-    
     // Header //
 
-    
     header.offer, header.details
         padding: 0
         position: relative
-        & nav 
+        & nav
             position: absolute
             top: 0
             left: 0
             padding: 15px 30px
             margin: 0
             box-sizing: border-box
-            & img 
+            & img
                 padding: 0
             & div.flex
                 padding: 0
                 height: auto
-                & p 
+                & p
                     margin: 0 0 0 5px
-                & a 
+                & a
                     margin-top: 0
                     position: relative
                 & a.active::after
@@ -944,19 +861,19 @@ $yellow: #F0D178
                     pointer-events: none
         & div.flex
             height: 100%
-            & div.flex 
+            & div.flex
                 flex-direction: column
                 justify-content: center
             & div.wrapper
-                & h1 
+                & h1
                     margin: 15px 0
-                & p 
+                & p
                     font-size: 16px
                     width: auto
                     margin-bottom: 30px
-                & button 
+                & button
                     padding: 14.5px 66.34px
-    
+
     header.offer nav
         & span, p
             color: black
@@ -971,15 +888,14 @@ $yellow: #F0D178
             font-size: 19px
         & .wrapper
             padding: 0 31% 0 8%
-        & div.left, div.right 
+        & div.left, div.right
             width: 50%
         & .nav-area
             bottom: 6.5%
             top: unset
 
-    
     // Offers // 
-    
+
     section.offers .wrapper
         width: 100%
         position: relative
@@ -994,10 +910,10 @@ $yellow: #F0D178
                 & button
                     background-color: rgba(18, 143, 94, 0.8)
                     border: 1px solid rgba(18, 143, 94, 0.8)
-            & h2 
+            & h2
                 line-height: 86.33px
                 z-index: 2
-            & button 
+            & button
                 margin-top: 30px
                 z-index: 2
                 transition: .36s ease
@@ -1021,7 +937,7 @@ $yellow: #F0D178
             display: flex
             & h2
                 padding-left: 240px
-                & span 
+                & span
                     & div
                         background-color: $yellow
                         position: absolute
@@ -1033,7 +949,6 @@ $yellow: #F0D178
                     & div.colorbox-2
                         width: 28%
 
-                    
         & .right
             & .container
                 width: 66%
@@ -1049,26 +964,22 @@ $yellow: #F0D178
                     & img
                         margin-right: 10px
                         align-self: flex-start
-                        position: relative 
+                        position: relative
                         top: 5px
-    
+
     .offers .group.active, .offers .individual.active
         display: flex
         & .box
             animation: move .74s ease
             animation-fill-mode: forwards
 
-        
     .offers .clients .second .left, .offers .wrapper .left
         &:hover::after
             height: 0
 
-        
-    
     .offers .clients .second .right, .offers .wrapper .right
         &:hover::after
             height: 0
-
 
     .offers section.offers .cover
         position: absolute
@@ -1078,7 +989,6 @@ $yellow: #F0D178
         top: 0
         left: 0
 
-    
     // @keyframes appear
 
     // from
@@ -1087,12 +997,10 @@ $yellow: #F0D178
     //     opacity: 1
 
     @keyframes move
-        0% 
+        0%
             transform: translateY(-150%)
         100%
             transform: translateY(0)
-
-    
 
     // Types //
 
@@ -1106,7 +1014,7 @@ $yellow: #F0D178
                 text-align: center
             & h2
                 margin: 50px 0 15px
-            & h3 
+            & h3
                 margin: 0 0 30px
             & .icon-box
                 justify-content: center
@@ -1114,7 +1022,6 @@ $yellow: #F0D178
 
     // Categories //
 
-    
     .offers section.categories
         padding: 2% 12.5% 0
         & .front
@@ -1123,10 +1030,9 @@ $yellow: #F0D178
             & h2
                 margin: 0 0 30px
 
-
     // Answers
 
-    .answers button 
+    .answers button
         padding: 14.5px 70.13px 14.5px 29.9px
         position: relative
         & .line
@@ -1145,20 +1051,14 @@ $yellow: #F0D178
                 top: unset
                 align-self: unset
                 margin: 0
-    
+
     .answers button:hover .line
         transform: translateX(5px)
-
-
-    
-    
-
 
     // Details //
 
     // header // 
 
-    
     .subtitles header.details
         & .right
             order: 2
@@ -1209,10 +1109,8 @@ $yellow: #F0D178
         & .nav-area
             bottom: 6.5%
 
-        
     // Section // 
 
-    
     .subtitles section
         & .colorspan
             width: 100%
@@ -1231,10 +1129,10 @@ $yellow: #F0D178
                 font-size: 29px
         & main
             padding: 60px 15% 30px 12.5%
-            & h4 
+            & h4
                 margin: 0
                 font-size: 29px
-            & p 
+            & p
                 margin: 0
             & p.medium
                 font-size: 19px
@@ -1247,7 +1145,7 @@ $yellow: #F0D178
                 justify-content: space-between
                 align-items: flex-start
                 margin-bottom: 30px
-                & img 
+                & img
                     width: min-content
                     margin-right: 15px
                 & .flex
@@ -1283,7 +1181,7 @@ $yellow: #F0D178
                             align-items: center
                         & span.last
                             margin-right: 10px
-            & .list 
+            & .list
                 width: 75.5%
                 justify-content: space-between
             & ul
@@ -1325,7 +1223,7 @@ $yellow: #F0D178
                         top: unset
                         align-self: unset
                         margin: 0
-                
+
             & .green-btn
                 padding: 14.5px 70.13px 14.5px 29.9px
                 position: relative
@@ -1350,40 +1248,32 @@ $yellow: #F0D178
                     transform: translateX(5px)
                 & .transparent-btn .line
                     transform: translateX(-5px)
-    
 
-
-    
-    
     @supports (-moz-appearance:none)
-    
+
         header span .flex img
             height: min-content
             align-self: center
-            
+
         .global-nav .wrapper
             margin-right: 4.75%
-        
+
         .about .colorbar
             width: 83%
-    
-        .about .headers 
+
+        .about .headers
             left: 15%
-        
-        .about .left p 
+
+        .about .left p
             margin: 0px 4.35% 0 0
-    
-        .offer .second img 
+
+        .offer .second img
             height: max-content
             align-self: center
-    
+
         .footer-svg
             bottom: -1px
 
-
-    
-    
-    
 @media (min-width: $breakpoint-phone) and (max-width: $breakpoint-tablet)
 
     *
@@ -1392,34 +1282,32 @@ $yellow: #F0D178
     html
         overflow-x: hidden
 
-    body 
+    body
         width: 100vw
 
-    .desktop 
+    .desktop
         display: none
 
-    .mobile 
+    .mobile
         display: flex
 
-    .regular-btn 
+    .regular-btn
         padding: 13.5px 42.35px
         opacity: 1
         font-size: 18px
 
-    h1, section h2, footer h2 
+    h1, section h2, footer h2
         font-size: 42px
 
-    h3 
+    h3
         font-size: 22px
         margin-bottom: 5px
         margin-top: 0
 
-    section p 
+    section p
         font-size: 16px
 
-
     // Signs animation
-
 
     .header-sign .first-path,
     .about-sign .first-path
@@ -1432,9 +1320,7 @@ $yellow: #F0D178
         animation-duration: 2s
         animation-delay: 1s
         animation-fill-mode: forwards
-    
 
-        
     .header-sign .second-path,
     .about-sign .second-path
         stroke-dasharray: 332
@@ -1447,7 +1333,6 @@ $yellow: #F0D178
         animation-delay: 1.6s
         animation-fill-mode: forwards
 
-        
     .header-sign .third-path,
     .about-sign .third-path
         stroke-dasharray: 800
@@ -1459,12 +1344,11 @@ $yellow: #F0D178
         animation-duration: 5s
         animation-delay: .65s
         animation-fill-mode: forwards
-        
+
     .header-sign .fourth-path,
     .about-sign .fourth-path
         stroke-dasharray: 70
         stroke-dashoffset: 70
-
 
     .loaded .header-sign .fourth-path,
     .about-sign.visible .fourth-path
@@ -1472,8 +1356,6 @@ $yellow: #F0D178
         animation-duration: 1s
         animation-delay: 5.5s
         animation-fill-mode: forwards
-
-
 
     // Nav //
 
@@ -1488,7 +1370,7 @@ $yellow: #F0D178
         box-sizing: border-box
         transition: .2s ease
         background-color: unset
-        & button 
+        & button
             padding: 0
             height: max-content
         & .burger
@@ -1520,7 +1402,7 @@ $yellow: #F0D178
         transform: translateY(0)
         align-items: center
         padding: 0 2.5% 0
-        & span 
+        & span
             background-color: $green
             &::after, &::before
                 background-color: $green
@@ -1531,12 +1413,11 @@ $yellow: #F0D178
             transform: scale(.701)
 
     .nav-area
-            top: 0
+        top: 0
 
-    
     // Header //
 
-    .header-span 
+    .header-span
         position: absolute
         top: 0
         left: 0
@@ -1544,12 +1425,11 @@ $yellow: #F0D178
         margin: auto
         justify-content: center
 
-    .header-span p 
+    .header-span p
         font-size: 12px
         letter-spacing: 2.16px
 
-
-    header 
+    header
         background-image: url("assets/images/headermobile.png")
         background-position: center
         justify-content: center
@@ -1559,14 +1439,13 @@ $yellow: #F0D178
         & .center
             width: 75%
             margin: 32% 0 30px
-            & h2 
+            & h2
                 font-size: 22px
                 margin-top: 7.5%
-            & svg 
+            & svg
                 margin: 7.5% 0
             & a
                 margin: 30px 0 0
-
 
     // About // 
 
@@ -1583,25 +1462,25 @@ $yellow: #F0D178
             flex-direction: column
             width: 100%
             padding-right: 30px
-            & h3 
+            & h3
                 margin: 0 5px 30px
-                & span 
+                & span
                     margin-left: 10px
                     position: relative
                     top: 2px
-            & h2 
+            & h2
                 align-self: flex-end
-            & .wrapper 
+            & .wrapper
                 align-self: flex-end
                 flex-direction: column
                 width: 47%
                 padding: 0
-            & a 
+            & a
                 margin-top: 10px
-            & button 
+            & button
                 align-self: flex-start
                 padding: 16px 29px
-                & span 
+                & span
                     width: 1px
                     height: 27px
                     background-color: #ffffff
@@ -1622,15 +1501,13 @@ $yellow: #F0D178
                     height: 1px
                     background-color: #474748
                     width: 44.69%
-            
 
-    .about-photo 
+    .about-photo
         width: 283.18px
         left: -20.75%
         bottom: 0
 
-
-    .about .headers button.sound 
+    .about .headers button.sound
         padding: 0 0 0 10px
 
     // Offer //
@@ -1659,7 +1536,7 @@ $yellow: #F0D178
                     margin-bottom: 30px
                     & *
                         opacity: 1
-                    & p 
+                    & p
                         text-align: left
                         width: 75%
                         margin-left: 25px
@@ -1667,11 +1544,9 @@ $yellow: #F0D178
         & button
             margin-top: 30px
 
-        
-    
     // Benefits //
 
-    .benefits 
+    .benefits
         background-image: url('assets/images/benefits-bg-mobile.png')
         background-color: #128F5E
         background-size: cover
@@ -1690,20 +1565,18 @@ $yellow: #F0D178
                 & p
                     font-size: 19px
         & a
-                bottom: -69%
-                left: 0
-                right: 0
-                margin: auto
-                width: max-content
-                font-size: 18px
-                & svg
-                    bottom: -55%
-                    left: -42%
+            bottom: -69%
+            left: 0
+            right: 0
+            margin: auto
+            width: max-content
+            font-size: 18px
+            & svg
+                bottom: -55%
+                left: -42%
 
-    
     // Clients //
 
-    
     .clients
         padding: 30px 0 40px 0
         & .first
@@ -1730,14 +1603,12 @@ $yellow: #F0D178
                 background-size: 295%
                 & a
                     align-self: flex-start
-                    
+
             & .right
                 margin-right: 10px
                 background-image: url('assets/images/clientgroup-mobile.png')
                 padding: 213px 0 30px 20px
 
-        
-    
     // Freestyle //
 
     .freestyle
@@ -1786,7 +1657,6 @@ $yellow: #F0D178
                 & button
                     width: 100%
 
-            
     // Categories //
 
     .categories
@@ -1843,9 +1713,8 @@ $yellow: #F0D178
             font-size: 19px
             font-weight: bold
             margin: 10px 0 0
-        & .regular-btn 
-                margin: 15px 0 20px
-
+        & .regular-btn
+            margin: 15px 0 20px
 
     // Answers //
 
@@ -1863,8 +1732,6 @@ $yellow: #F0D178
             & p
                 margin: 0 0 20px 35px
 
-
-
     // Footer //
 
     .footer-svg
@@ -1874,11 +1741,10 @@ $yellow: #F0D178
         display: flex
         width: 200%
 
-    .footer-svg.visible path 
+    .footer-svg.visible path
         animation: footer-svg 5s linear forwards, svg-fill .2s linear 3s forwards
 
-    
-    footer 
+    footer
         padding: 20px 0 200px 20px
         & .front, .links
             flex-direction: column
@@ -1915,7 +1781,7 @@ $yellow: #F0D178
                 bottom: 0
                 right: 0
                 padding: 0
-            & button 
+            & button
                 height: 116px
                 width: 59px
                 display: flex
@@ -1935,7 +1801,3 @@ $yellow: #F0D178
                 align-items: center
                 & p
                     margin-right: 15px
-
-
-
-    

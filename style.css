@@ -55,12 +55,11 @@ body.loaded {
 }
 #loading .loading-svg {
   width: 90%;
-  opacity: 0;
+  opacity: 1;
 }
 #loading .loading-svg path {
-  stroke-dasharray: 7000;
-  stroke-dashoffset: 7000;
-  fill: rgba(18, 143, 94, 0);
+  stroke-dasharray: 4050;
+  stroke-dashoffset: 4050;
   transition: 0.36s ease;
 }
 
@@ -77,39 +76,39 @@ body.loaded {
 }
 
 .loading-svg.fourth path {
-  animation: loading-svg-fill 0.5s linear forwards;
+  animation: loading-svg-four 0.5s linear forwards;
 }
 
 @keyframes loading-svg-first {
   0% {
-    stroke-dashoffset: 7000;
+    stroke-dasharray: 4050;
   }
   100% {
-    stroke-dashoffset: 9000;
+    stroke-dasharray: 8000;
   }
 }
 @keyframes loading-svg-second {
   0% {
-    stroke-dashoffset: 9000;
+    stroke-dasharray: 8000;
   }
   100% {
-    stroke-dashoffset: 12000;
+    stroke-dasharray: 12000;
   }
 }
 @keyframes loading-svg-third {
   0% {
-    stroke-dashoffset: 12000;
+    stroke-dasharray: 12000;
   }
   100% {
-    stroke-dashoffset: 14000;
+    stroke-dasharray: 16000;
   }
 }
-@keyframes loading-svg-fill {
+@keyframes loading-svg-four {
   0% {
-    fill: rgba(18, 143, 94, 0);
+    stroke-dasharray: 16000;
   }
   100% {
-    fill: #128f5e;
+    stroke-dasharray: 20000;
   }
 }
 ::selection {
@@ -233,7 +232,30 @@ header {
   background-color: #101010;
   flex-direction: column;
   position: relative;
-  background-size: cover;
+  z-index: 1;
+}
+header::after {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  content: "";
+  z-index: -1;
+  opacity: 0.3;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+.loaded header::after {
+  animation: flash 0.4s ease 0.24s forwards;
 }
 
 nav {
@@ -1040,7 +1062,7 @@ header.offer {
   background-color: white;
 }
 header.offer .left {
-  background-image: url("assets/images/offer/header.png");
+  background-image: url("assets/images/offer/header.jpg");
   background-size: cover;
 }
 
@@ -1053,7 +1075,7 @@ header.details .right {
 }
 
 header.burgenland .right {
-  background-image: url("assets/images/burgenland/header.png");
+  background-image: url("assets/images/burgenland/header.jpg");
 }
 
 /*# sourceMappingURL=style.css.map */
